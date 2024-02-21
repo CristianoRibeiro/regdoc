@@ -1,0 +1,832 @@
+/*
+ * Folha de estilos do aplicativo
+ * REGDOC
+ * Copyright 2021.
+ * Valid Hub - Douglas Ferreira Fernandes
+ */
+
+@import url(principal.css);
+
+/* Acessar */
+section#acessar {
+    background-image: url('../img/regdoc-login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section#acessar.esqueceu-senha {
+    height: 90vh;
+}
+section#acessar .btn.btn-vhub {
+	background-color: #FF4841;
+	color: #FFF;
+	padding: 5px 40px;
+	border-radius: 0 !important;
+	transition: 0.9s;
+}
+section#acessar .btn.btn-vhub:hover {
+	filter: brightness(0.6);
+}
+section#acessar .text-orange {
+	color: #FF4841;
+}
+section#acessar header {
+  	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+section#acessar header.bg-white .container {
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+section#acessar div.container-login-form div.row.row-forms {
+	max-width: 970px;
+	margin: 71px auto 31px;
+	background-color: rgba(1, 1, 12, 0.5);
+	padding: 16px;
+}
+section#acessar div.container-login-form div.row.row-esqueceu-senha {
+	margin: 71px auto 31px;
+	padding: 16px;
+}
+section#acessar div.container-login-form div.row.row-esqueceu-senha div.normal {
+	background-color: rgba(1, 1, 12, 0.5);
+}
+section#acessar  div.normal {
+	color:#FFF;
+	padding:60px 40px;
+	border-right: 1px solid #FFF;
+}
+section#acessar div.normal .form-control,
+section#acessar div.certificado .form-control {
+	background-color: #FFF !important;
+    border:none;
+    border-bottom:2px solid rgba(255,255,255,0.1);
+	padding:.8rem .9rem .8rem 1.8rem;
+	border-radius: 0 !important;
+}
+section#acessar div.normal .form-control:focus {
+    border-color:#003656;
+    outline:0;
+    -webkit-box-shadow:0 0 0 0 transparent;
+    box-shadow:0 0 0 0 transparent;
+}
+section#acessar div.normal .form-group.email:before,
+section#acessar div.normal .form-group.senha:before {
+	font-family:'Font Awesome 5 Free';
+	font-size:1rem;
+	left:0;
+	position:absolute;
+	text-align:center;
+    text-rendering:auto;
+    top:.4rem;
+    width:28px;
+    -webkit-font-smoothing:antialiased;
+}
+section#acessar div.normal div.opcoes {
+	color:rgba(255,255,255,0.7);
+}
+section#acessar div.normal div.opcoes a {
+	color:rgba(255,255,255,0.7);
+}
+section#acessar div.normal div.opcoes a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+section#acessar div.certificado {
+	color:#FFF;
+	padding:46px 40px;
+}
+section#acessar div.certificado figure {
+	width:90%;
+}
+section#acessar footer.bg-grey {
+    background-color: #323232;
+}
+
+/* Cabeçalho */
+nav#navbar-topo {
+	background-color:#363636;
+}
+nav#navbar-topo ul.navbar-nav a {
+	color:rgba(255,255,255,0.7);
+}
+nav#navbar-topo ul.navbar-nav a:hover {
+	color:#FFF;
+}
+nav#navbar-topo div.botoes {
+	border-left:1px solid #FFF;
+}
+nav#navbar-topo div.usuario>button {
+	background:transparent;
+	border:none;
+	color:rgba(255,255,255,0.7);
+	padding-right:1.8rem;
+}
+nav#navbar-topo div.usuario>button:after {
+	border:none;
+	content: "\f078";
+	font-family: 'Font Awesome 5 Free';
+	font-size:1rem;
+    font-weight: 900;
+	right:0;
+	position:absolute;
+	text-align:center;
+    text-rendering:auto;
+    top:0.6rem;
+    width:1.8rem;
+    -webkit-font-smoothing:antialiased;
+}
+nav#navbar-topo div.usuario>button>figure {
+	background:#FFF;
+	border-radius:2px;
+    color:#363636;
+    font-size:1.4rem;
+	height:32px;
+	position:relative;
+	width:32px;
+}
+nav#navbar-topo div.usuario>button>span {
+	line-height:32px;
+	height:32px;
+}
+nav#navbar-topo div.usuario>div.dropdown-menu {
+	background-color:#363636;
+	border:none;
+	border-radius:0 0 2px 2px;
+	font-size:.9rem;
+	left:auto;
+	padding-top:14px;
+	right:0;
+}
+nav#navbar-topo div.usuario>div.dropdown-menu a.dropdown-item {
+	color:rgba(255,255,255,0.7);
+	padding:.5rem 1.5rem .5rem 1rem;
+}
+nav#navbar-topo div.usuario>div.dropdown-menu a.dropdown-item:hover,
+nav#navbar-topo div.usuario>div.dropdown-menu a.dropdown-item:active,
+nav#navbar-topo div.usuario>div.dropdown-menu a.dropdown-item:focus {
+	background-color:#0f3f7a;
+	color:#FFF;
+}
+nav#navbar-topo div.usuario>div.dropdown-menu a.dropdown-item>i {
+	vertical-align:middle;
+	text-align:center;
+	width:20px;
+}
+nav#navbar-topo div.usuario>div.dropdown-menu a.dropdown-item>span {
+	margin-left:.3rem;
+	vertical-align:middle;
+}
+
+/* Menu da aplicação */
+nav#navbar-menu {
+	background-color:#004d7c;
+	padding:1.5rem 0 0 0;
+}
+nav#navbar-menu:before {
+	background-color:#FFF;
+	content:'';
+	height:71px;
+	left:0;
+	position:absolute;
+	top:100%;
+	width:100%;
+	z-index:1;
+}
+nav#navbar-menu div.box-menu {
+	position:relative;
+	width:100%;
+}
+nav#navbar-menu ul.navbar-nav>li>a {
+	color:#FFF;
+	font-size:1rem;
+	padding:1rem 1.5rem;
+}
+nav#navbar-menu ul.navbar-nav>li>a:hover {
+	color:#1e98bf;
+}
+nav#navbar-menu ul.navbar-nav>li>a>i {
+	vertical-align:middle;
+}
+nav#navbar-menu ul.navbar-nav>li>a>span {
+	vertical-align:middle;
+}
+nav#navbar-menu ul.navbar-nav>li.dropdown>a.dropdown-toggle:after {
+	display:none;
+}
+nav#navbar-menu ul.navbar-nav>li.active>a {
+	background-color:#FFF;
+	border-radius:4px 4px 0 0;
+	color:#004d7c;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub {
+    display:none;
+    left:0;
+    padding:0 1.5rem;
+    position:absolute;
+    top:100%;
+    width:100%;
+    z-index:999;
+}
+nav#navbar-menu ul.navbar-nav>li.active>ul.navbar-sub {
+	display:flex;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li {
+	position:relative;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li+li {
+	margin-left:1.5rem;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li>a:not(.btn) {
+	color:#545454;
+	padding:1.5rem 0;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li.active>a:not(.btn) {
+	color:#004d7c;
+	font-weight:bold;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li>a>i {
+	vertical-align:middle;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li>a>span {
+	vertical-align:middle;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li>a.active {
+	color:#004d7c;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li>a.btn {
+	margin:.95rem 0;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li.dropdown>a.dropdown-toggle:after {
+	vertical-align:middle;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li.dropdown>div.dropdown-menu {
+	background-color:#FFF;
+	border:none;
+	border-radius:0;
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+	font-size:inherit;
+	margin:0;
+}
+nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li.dropdown>div.dropdown-menu>a.active {
+	background-color:transparent;
+	color:#004d7c;
+}
+
+nav#navbar-menu div.pessoa-ativa {
+	position:absolute;
+    right:0;
+    top:0;
+}
+nav#navbar-menu div.pessoa-ativa button {
+	background-color:#003656;
+	border-color:#003656;
+	color:#FFF;
+	max-width:300px;
+	padding-right:1.8rem;
+}
+nav#navbar-menu div.pessoa-ativa button:hover,
+nav#navbar-menu div.pessoa-ativa button:focus,
+nav#navbar-menu div.pessoa-ativa button:active,
+nav#navbar-menu div.pessoa-ativa.show>button.dropdown-toggle {
+	background-color:#002338;
+	border-color:#002338;
+}
+nav#navbar-menu div.pessoa-ativa i {
+    vertical-align:middle;
+}
+nav#navbar-menu div.pessoa-ativa span {
+    vertical-align:middle;
+}
+nav#navbar-menu div.pessoa-ativa button>span {
+	display:inline-block;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width:calc(100% - 1.4rem);
+}
+nav#navbar-menu div.pessoa-ativa button:after {
+    border:none;
+    content:"\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-size:1rem;
+    font-weight: 900;
+    right:0;
+    position:absolute;
+    text-align:center;
+    text-rendering:auto;
+    top:0.3rem;
+    width:1.8rem;
+    -webkit-font-smoothing:antialiased;
+}
+nav#navbar-menu div.pessoa-ativa div.dropdown-menu {
+	background-color:#002338;
+	left:auto;
+	right:0;
+}
+nav#navbar-menu div.pessoa-ativa div.dropdown-menu a.dropdown-item {
+	padding:.5rem 1.5rem .5rem 1rem;
+}
+
+/*
+ * Conteúdo do aplicativo
+ * Aqui conterão todos os estilos comuns à todo o sistema,
+ * caso hajam estilos específicos, precisam ser categorizados e
+ * definidos em outra parte desta folha.
+ */
+section#app {
+	padding:91px 0 20px 0;
+}
+div.card.box-app {
+	background-color:#FFF;
+	border:none;
+	border-radius:3px;
+	padding:0;
+}
+div.card.box-app>div.card-header {
+	background-color:transparent;
+	font-size:1.3rem;
+	margin:0 1.5rem;
+	padding:1rem 0 .5rem 0;
+}
+div.card.box-app>div.card-header div.card-subtitle {
+	font-size:.9rem;
+}
+div.card.box-app>div.card-body {
+	padding:1rem 1.5rem;
+}
+div.card.box-app>div.card-filter {
+	background-color:#EFEFEF;
+	display:none;
+	margin:0 1.5rem;
+	padding:.75rem 1rem;
+}
+div.card.box-app>table {
+	border-left:none;
+	border-right:none;
+	font-size:.85rem;
+	margin:1.5rem 0 0 0;
+}
+div.card.box-app>table th:first-child,
+div.card.box-app>table td:first-child {
+	border-left:none;
+	padding-left:1.5rem;
+}
+div.card.box-app>table th:last-child,
+div.card.box-app>table td:last-child {
+	border-right:none;
+	padding-right:1.5rem;
+}
+div.card.box-app>table td.options div.dropdown-menu {
+	left:auto !important;
+	right:0 !important;
+	top:100% !important;
+	transform:none !important;
+}
+div.card.box-app ul.nav {
+    padding: 0 1rem;
+}
+div.card.box-app ul.nav>li.nav-item {
+    margin-bottom: 0;
+    padding: 0 1rem;
+}
+div.card.box-app ul.nav>li.nav-item>a {
+    border: 0;
+    border-bottom: 1px solid transparent;
+    color: #545454;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+div.card.box-app ul.nav>li.nav-item>a.active,
+div.card.box-app ul.nav>li.nav-item>a:hover,
+div.card.box-app ul.nav>li.nav-item>a:focus {
+    color: #004d7c;
+    border-bottom: 3px solid #004d7c;
+}
+div.card.box-app div.tab-content {
+    padding: 2rem;
+}
+div.card.box-app.status-acompanhamento .card-header {
+    background-color: #004d7c;
+    border-bottom: .5rem solid #EAEAEA;
+}
+@media (max-width: 468.98px) {
+	div.card.box-app.status-acompanhamento table#table-status-acompanhamento  {
+	    overflow-x: scroll;
+	    display: block;
+	}
+}
+div.card.box-app.status-acompanhamento table#table-status-acompanhamento thead {
+    background-color: #004d7c;
+    color: #FFF;
+}
+
+figure.logo-pessoa {
+    background-color: #EAEAEA;
+    border-radius: 3px;
+    height: 150px;
+    padding: 10px;
+    width: 150px;
+}
+figure.logo-pessoa.logo-small {
+    height: 100px;
+    padding: 5px;
+    width: 100px;
+}
+section#contrato {
+	padding-top:20px;
+}
+
+/* Alertas iniciais */
+div.alertas a.alerta {
+	background:#FAFAFA;
+    border:1px solid #EAEAEA;
+    border-bottom:5px solid #EAEAEA;
+    border-radius:0 0 2px 2px;
+    color:#545454;
+    display:block;
+    padding:2rem 1rem 1.5rem 1rem;
+    position:relative;
+    text-align:center;
+    text-decoration:none;
+}
+div.alertas a.alerta:hover {
+	color:#000;
+}
+div.alertas a.alerta>span.badge {
+	border-radius:0;
+	display:block;
+	padding:.5rem .55rem;
+	position:absolute;
+	top:0;
+	right:0;
+}
+div.alertas a.alerta>i {
+	border:3px solid #EAEAEA;
+	border-radius:100%;
+	font-size:3rem;
+	margin-bottom:.5rem;
+	padding:1rem;
+}
+
+/* Alterações no Datepicker */
+.datepicker {
+	border:0;
+	border-radius:0;
+	box-shadow:0 0 1px rgba(0,0,0,0.3);
+	font-size:.9rem;
+	padding:0.7rem;
+}
+.datepicker table tr th,
+.datepicker table tr td,
+.datepicker table tr td.range {
+	border-radius:100%;
+}
+.datepicker .datepicker-switch:hover,
+.datepicker .next:hover,
+.datepicker .prev:hover,
+.datepicker tfoot tr th:hover {
+	background-color:transparent;
+	color:#004d7c;
+}
+.input-daterange input {
+	border-radius:0 !important;
+	text-align:inherit;
+}
+.input-daterange .input-group-addon {
+	margin:0;
+	padding:.375rem .45rem;
+	text-shadow:inherit;
+}
+
+/* Alterações no upload de arquivos */
+label.arquivo-upload {
+	background:#FCFCFC;
+    border:1px solid #e5e5e5;
+	cursor:pointer;
+    padding:1rem;
+    text-align:center;
+    width:100%;
+}
+label.arquivo-upload:hover {
+	background:#F0F0F0;
+    border:1px solid #DDD;
+}
+label.arquivo-upload>span>i {
+	font-size:4.5rem;
+	margin:1rem 0;
+}
+label.arquivo-upload>span>h4 {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+	width:100%;
+}
+label.arquivo-upload>input[type=file] {
+	display:none;
+}
+div.progresso-upload {
+	border-radius:0;
+}
+div.arquivo>button.nome,
+div.arquivo>button.assinatura {
+	padding:0 .45rem;
+}
+div.arquivo>button.remover {
+	padding:.282rem .25rem;
+}
+div.arquivo>button.remover>i {
+	font-size:1.5rem;
+	vertical-align:middle;
+}
+div.arquivo>button.assinatura {
+    color:#111;
+    background-color:#ffc107;
+    border-color:#ffc107;
+}
+div.arquivo>button.assinatura:before {
+	content:'\f3c1';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+div.arquivo>button.assinatura.in_assinado {
+    color:#fff;
+    background-color:#28a745;
+    border-color:#28a745;
+}
+div.arquivo>button.assinatura.in_assinado:before {
+	content:'\f023';
+}
+div.arquivo>button.assinatura.erro {
+    color:#fff;
+    background-color:#dc3545;
+    border-color:#dc3545;
+}
+
+/* Botões de tabela de arquivos */
+div.arquivos .btn-arquivo {
+	padding: .15rem 0;
+    width: 32px;
+}
+div.arquivos .btn-arquivo.visualizar:before {
+	content:'\f06e';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+div.arquivos .btn-arquivo.assinatura:before {
+    content:'\f023';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+div.arquivos .btn-arquivo.remover:before {
+    content:'\f00d';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+div.arquivos .btn-arquivo.upload:before {
+    content:'\f093';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+div.arquivos .btn-arquivo.comprovante:before {
+    content:'\f543';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+div.arquivos .btn-arquivo.check:before {
+    content:'\f00c';
+	font-family:'Font Awesome 5 Free';
+	font-size:1.05rem;
+	font-weight:900;
+    text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+}
+td.multiplo-assinar {
+  text-align: center;
+}
+
+/* Assinatura */
+section#assinatura {
+	padding:15px;
+}
+
+/* Tabelas */
+table.table td div.parte>span.ellipsis {
+    max-width: 100%;
+}
+table.table td div.parte+div.parte {
+    border-top: 1px dashed #545454;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.custom-control-label::before {
+	background-color: #FFFFFF;
+	border: 1px solid #CCC;
+}
+
+div.header-data {
+    font-size: .8rem;
+}
+div.header-data .btn {
+    font-size: .8rem !important;
+}
+div.header-progresso {
+    font-size: .8rem;
+}
+
+.breakAll{
+	word-break: break-all;
+}
+/*** Media Querys ***/
+/* Dropzone CSS */
+.dropzone {
+    border: 2px dashed #999;
+    border-radius: .42rem;
+    cursor: pointer;
+    padding: 30px 50px;
+    text-align: center;
+}
+.dropzone.dz-started .dz-message {
+    display: none;
+}
+.dropzone .dz-preview .dz-image {
+    border-radius: 5px !important;
+    background: #DDD !important;
+}
+.dropzone .dz-error-mark,
+.dropzone .dz-success-mark {
+    border-radius: 100%;
+    color: #FFF;
+    margin-top: auto !important;
+    margin-left: -15px !important;
+    padding-top: 2px;
+    top: auto !important;
+    bottom: 27px;
+    width: 32px;
+    height: 32px;
+}
+.dropzone .dz-success-mark {
+    background: linear-gradient(to bottom, #1BC5BD, #14a099);
+    padding-top: 4px;
+}
+.dropzone .dz-error-mark {
+    background: linear-gradient(to bottom, #be2626, #a92222);
+}
+.dropzone .dz-error-mark>i {
+    font-size: 1.7rem;
+    color: #FFF;
+}
+.dropzone .dz-success-mark>i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+.dropzone .dz-preview .dz-details .dz-size {
+    margin-bottom: .7em;
+}
+.dropzone button {
+    background-color: transparent;
+    border: none;
+}
+.dropzone button:focus {
+    outline: none !important;
+}
+.dropzone i {
+    color: #999;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+/*** Media Querys ***/
+/* Media Querys  */
+
+
+@media (max-width: 575.98px) {
+
+	.modal-dialog .modal-footer {
+		flex-wrap: wrap;
+	}
+
+	.modal-dialog .modal-footer button {
+		width: 100%;
+		margin-top: .5rem;
+	}
+
+	.accordion div.card-header button.dados-parte {
+		white-space: normal;
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	section#acessar div.normal {
+		border-right: 0;
+		border-bottom: 1px solid #FFF;
+		padding: 16px;
+	}
+	section#acessar div.certificado {
+		padding: 16px;
+	}
+
+	section#acessar .btn.btn-vhub {
+		width: 100%;
+		padding: 5px 0;
+
+	}
+
+	/* Global  */
+	.btn-w-100-sm {
+		width: 100%;
+		white-space: normal;
+	}
+	/* Header */
+	nav#navbar-topo {
+		padding: .5rem 0 4rem;
+	}
+	nav#navbar-topo .container a img {
+		height: 30px;
+	}
+	nav#navbar-menu div.pessoa-ativa {
+	    top:-4rem;
+	}
+	nav#navbar-menu ul.navbar-nav>li.active>ul.navbar-sub {
+		overflow-x: scroll;
+	}
+	nav#navbar-menu ul.navbar-nav>li>ul.navbar-sub>li>a:not(.btn) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: max-content;
+		grid-gap: 6px;
+	}
+	/* App content */
+	#app .container .card.box-app .card-header .row .buttons.col-12 .btn {
+		width: 100%;
+		margin-top: 10px;
+		white-space: normal;
+	}
+	#app .container .card.box-app table.table,
+	div.modal-dialog .modal-body table.table {
+		display: block;
+		overflow-x: scroll;
+	}
+	div.card.box-app div.tab-content {
+	    padding: 1rem;
+	}
+	#app #registro-fiduciario .card.box-app .card-header .card-subtitle,
+	#app #documento .card.box-app .card-header .card-subtitle {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1rem;
+	}
+
+	.collapse-partes button:after {
+		position: initial !important;
+	}
+
+	#data-situacao {
+		width: 100% !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	div.card-body:has(button.btn-w-100-sm) {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+
+	div.card-body button.btn-w-100-sm {
+		margin-bottom: 0.8rem !important;
+	}
+
+	.collapse-partes button:after {
+		position: initial !important;
+	}
+
+	#app .container .card.box-app table.table,
+	div.modal-dialog .modal-body table.table {
+		display: block;
+		overflow-x: scroll;
+	}
+}

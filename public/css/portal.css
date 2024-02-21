@@ -1,0 +1,89 @@
+/*
+ * Folha de estilos do portal
+ * REGDOC
+ * Copyright 2021.
+ * Valid Hub - Douglas Ferreira Fernandes
+ */
+
+@import url(principal.css);
+
+/* Cabeçalho */
+nav#navbar-topo {
+	background-color:#FFF;
+}
+nav#navbar-topo ul.navbar-nav a {
+	color:#004d7c;
+}
+nav#navbar-topo ul.navbar-nav a:hover {
+	color:#004d7c;
+}
+nav#navbar-topo div.botoes {
+	border-left:1px solid #004d7c;
+}
+nav#navbar-topo div.botoes a.usuario {
+	line-height:15px;
+}
+nav#navbar-topo div.botoes a.sair>i {
+	font-size:1.5rem;
+	font-weight:bold;
+	line-height:29px;
+}
+header.header{
+	background-image:url(../img/slide01.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	height:500px;
+}
+header div.form {
+	padding-top:100px;
+}
+header div.form h2 {
+	color:#004d7c;
+}
+
+/* Seções */
+section#sobre {
+	background-color:#004d7c;
+	color:#FFF;
+}
+
+/* Rodapé */
+footer {
+	background-color:#111;
+	color:#FFF;
+	font-size:.8rem;
+	padding:15px 0 20px 0;
+}
+footer ul.nav a {
+	color:rgba(255,255,255,0.7);
+}
+footer ul.nav a:hover {
+	color:#FFF
+}
+footer div.copy {
+	border-top:1px solid rgba(255,255,255,0.2);
+}
+
+/*** Media Querys ***/
+
+/* Extra small devices (portrait phones, less than 767.98) */
+@media (max-width: 767.98px) {
+	nav#navbar-topo div.botoes {
+		border-left: 0;
+		width: 100%;
+	}
+
+	header div.form {
+		padding-top: 70px;
+	}
+	header div.form form {
+		padding: 20px;
+		border-radius: 15px;
+		background-color: white;
+	}
+	header div.form form h2 {
+		font-size: 1.5rem;
+		margin-bottom: 18.5px;
+	}
+}
