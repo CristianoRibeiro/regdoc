@@ -1,83 +1,51 @@
-# RegDoc 
+## Projeto REGDOC - Registro Eletrônico
 
- 
-
-Documento responsável por trazer um passo-a-passo de como executar o RegDoc. localmente em sistemas Windows. 
-
- 
-### 📋 Pré-Requisitos 
-
- 
-* [PHP] - versão mais atualizada (https://windows.php.net/download/) 
-
-* [PostgreSQL] - versão mais atualizada (https://www.postgresql.org/download/windows/) 
-
-* [Composer] - versão mais atualizada (https://getcomposer.org/download/) 
+O REGDOC é uma solução inovadora desenvolvida pela Valid Hub para facilitar o registro eletrônico de contratos no Brasil, abrangendo tanto bens imóveis quanto bens móveis. Esta plataforma integra de forma eficiente sistemas cartoriais, financeiros e órgãos públicos, proporcionando uma abordagem ampla, organizada e completamente eletrônica para formalização de registros.
 
 
+## Tecnologias Utilizadas
 
- 
- 
+- **PHP 8.1**: Linguagem de programação principal.
+- **Laravel 8**: Framework PHP para desenvolvimento web.
+- **PostgreSQL**: Banco de dados relacional.
+- **Bootstrap**: Framework de front-end para desenvolvimento de interfaces responsivas.
+- **API RESTful**: Arquitetura utilizada para comunicação entre sistemas.
+- **DDD (Domain-Driven Design)**: Padrão de design para modelagem de domínio de negócios.
+- **SOLID**: Princípios de design para escrever código limpo e escalável.
+- **Migrations**: Ferramenta do Laravel para controle de esquema de banco de dados.
+- **Facades**: Componente do Laravel para acesso simplificado aos serviços do framework.
+- **Form Request**: Recurso do Laravel para validação de dados de entrada.
 
-### 🔧 Instalações & Start Aplicação 
+## Funcionalidades Principais
 
-Para ter um ambiente em execução será necessária a instalação e configuração de algumas ferramentas. 
+- **Integração Tecnológica**: Conecta imobiliárias, instituições financeiras, cartórios extrajudiciais, incorporadoras, etc.
+- **Formalização Eletrônica**: Todo o processo de registro é realizado de forma eletrônica, sem uso de papel.
+- **Segurança Jurídica**: Utilização de certificado digital garante segurança e validade jurídica aos registros.
+- **Agilidade e Eficiência**: Simplifica e agiliza o processo de formalização de contratos, garantindo uma experiência eficiente para os usuários.
 
- 
+## Como Utilizar
 
-* PHP 
+1. Faça o clone deste repositório para sua máquina local.
+2. Instale as dependências do projeto utilizando o Composer:
 
-``` 
+   ```
+   composer install
+   ```
 
-Passo 1) Crie um diretório em seu local de preferência e descompacte o arquivo de download do PHP. 
+3. Configure as variáveis de ambiente no arquivo `.env`, incluindo as informações de conexão com o banco de dados e as chaves de API, se necessário.
+4. Execute as migrations para criar as tabelas no banco de dados:
 
-Passo 2) Instale o PHP seguindo as configurações padrão. 
+   ```
+   php artisan migrate
+   ```
 
-Passo 3) Edite as variáveis de ambiente do Windows incluindo um novo valor na variável "Path". O valor deve conter a raiz do diretório de instalação do PHP, por exemplo, C:\php-8.1.11. 
+5. Inicie o servidor local:
 
-Passo 4) Confirme se a instalação do PHP está correta. Acesse qualquer terminal e digite o comando php --version, a versão do PHP deve ser exibida. 
+   ```
+   php artisan serve
+   ```
+
+6. Acesse a aplicação em seu navegador, geralmente em [http://localhost:8000](http://localhost:8000).
 
 
-``` 
 
-* Composer 
-
-``` 
-
-Passo 1) Execute o arquivo de download (.exe) para iniciar a instalação. Nenhuma opção deve ser selecionada, ou seja, a instalação deve ser padrão. 
-
-Passo 2) Edite as variáveis de ambiente do Windows incluindo um novo valor na variável "Path". O valor deve conter a raiz do diretório de instalação do PHP, por exemplo, C:\ProgramData\ComposerSetup\bin. Geralmente, o Composer insere automaticamente essa variável.  
-
-Passo 3) Reinicie a máquina para que as configurações sejam aplicadas. 
-
-Passo 4) Confirme se a instalação do Composer está correta. Acesse qualquer terminal e digite o comando composer --version, a versão do PHP deve ser exibida. 
-
-Passo 5) No diretório onde clonou o projeto será necessário instalar o Compose com o comando e composer install e atualiza-lo com o comando composer update 
-
-``` 
-
-* Banco de dados 
-
-``` 
-
-Passo 1) Execute o arquivo de download (.exe) para iniciar a instalação do PostgreSQL. Seguir a instalação padrão, sem a necessidade de modificar nenhuma opção. 
-
-Passo 2) Ao termino do processo, o programa pgAdmin também deve ser instalado. Ele será utilizado para gerenciar o banco de dados. Abra-o e clicando o botão direito, crie um novo Database (sugestão de nome: regdoc).  
-
-Passo 3) Clicando com o botão direito sobre o Database criado, utilize Restore para iniciar o processo de restauração de um banco de dados. Ponto importante: nesse passo é necessário ter acesso ao arquivo de dump do banco de dados do RegDoc. 
-
-Passo 4) Finalizando a restauração do banco já é possível iniciar a aplicação. Ponto importante: geralmente, a restauração do banco de dados gera alguns erros, eles são comuns e não deve afetar o comportamento da aplicação 
-
-``` 
-
-* Start da aplicação 
-
-``` 
-
-Passo 1) Com todos os dados realizados com sucesso é hora de iniciar a aplicação. Navegue até o diretório do projeto e, através de um terminal de comando, digite o comando php artisan serve. Se tudo estiver correto deve ser exibido a mensagem Starting Laravel development server: http://127.0.0.1:8000 
-
-Passo 2) Abra o navegador utilizando a url http://127.0.0.1:8000  
-
-``` 
-
- # regdoc
